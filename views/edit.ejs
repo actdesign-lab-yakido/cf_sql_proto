@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ユーザー編集</title>
+</head>
+<body>
+    <h1>更新フォーム</h1>
+    <form action="<%= cf_root_path %>/update/<%= user[0].id %>" method="POST">
+        名前 <input type="text" name="name" value="<%= user[0].name %>"><br>
+        email <input type="text" name="email" value="<%= user[0].email %>"><br>
+        <button type="submit">更新</button>
+    </form>    
+</body>
+</html>
